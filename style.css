@@ -1,0 +1,136 @@
+body {
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+  }
+
+#navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 26px;
+  text-decoration: none;
+  font-family: "Open Sans"
+}
+
+li a:hover {
+  background-color: blue;
+}
+
+@media only screen and (max-width: 360px) {
+  li a {
+    padding: 14px 16px;
+  }
+}
+
+/*Welcome section*/
+#welcome-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#welcome-section i{
+  font-size: 60px;
+}
+
+/*Projects section*/
+#projects{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+img:hover {
+  transform: scale(2); 
+}
+.project-tile {
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  img {
+    max-width: 300px;
+  }
+}
+
+/*Contact section*/
+#contact {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+#contact i:hover {
+  transform: scale(1.5); 
+}
+
+#contact > div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile{
+  padding: 25px 50px 25px;
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  text-align: center;
+}
